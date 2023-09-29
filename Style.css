@@ -4,9 +4,24 @@
     box-sizing: border-box;
     font-family: 'poppins' ,sans-serif;
 }
+.container{
+    max-width: 1440px;
+}
 
 .full_nav{
-    width: 100%;
+    width: 80%;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 20rem;
+    cursor: pointer;
+}
+#check{
+    display: none;
 }
 
 .wrapper{
@@ -64,17 +79,23 @@ gap: 1rem;
     padding: 15px 20px;
     
 }
-.card h1{
+.card h5{
     margin-bottom: 1rem;
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+    color: #fff;
 }
 .card p{
     text-align: justify;
-    line-height: 20ox;
+    line-height: 20px;
     margin-bottom: 20px;
+    color: #fff;
 }
-
+.card-pic{
+    background-color: #fff;
+    width: 18%;
+    border-radius: 25px;
+}
 
 /* wrapper 2 */
 
@@ -97,20 +118,40 @@ img{
     
     
 }
-.text-box{
+.text-box1{
     width: 50%;
 }
 
-.text-box h4{
+.text-box1 h4{
     font-size:18px;
+    color: #F0C932;
+    
 }
 
-.text-box h2{
-font-size:3rem;
+.text-box1 h2{
+font-size:2.6rem;
+color: #fff;
 }
 
-.text-box p{
+.text-box1 p{
 font-size:14px;
+color: #fff;
+}
+
+.views{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.views h6{
+    color: #F0C932;
+    font-size: 1.6rem;
+}
+
+.views p{
+    font-size: 1rem;
+    text-align: center;
 }
 
 
@@ -141,6 +182,37 @@ font-size:14px;
     justify-content: start;
     align-items: start;
 }
+.snd-child h4{
+    color: #545BE8;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.snd-child h2{
+    color: #141E32;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 60px;
+    
+}
+
+.snd-child p{
+    color: #969696;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 27px;
+}
+.best-course{
+    width: 100%;
+    height: auto;
+}
+
+.best-course text{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 
 .div1{
 
@@ -156,6 +228,35 @@ font-size:14px;
     gap: 2rem;
 }
 
+.card1{
+    
+    padding: 15px 20px;
+    
+}
+.card1 h5{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    
+}
+
+
+
+.dollar{
+    position: relative;
+    bottom: 1.5rem;
+    left: 9.6rem;
+}
+
+.view{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+
+}
+
+
+
 /* testimonials */
 
 .container3{
@@ -169,12 +270,18 @@ font-size:14px;
     margin-bottom: 50px;
 }
 
+
 .row1{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     gap: 6rem;
+}
+.container4{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .card-header{
@@ -183,20 +290,31 @@ font-size:14px;
 
 /* Footer */
 
-.footer{
-    width:100%;
+.container5{
+
+   width: 100%;
     background: #393E46;
-    padding: 20px 13px 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
-    gap: 3.5rem;
-    position: absolute;
+}
+
+.footer{
+    width:80%;
+    background: #393E46;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    margin:  auto;
 }
 
 .footer-content h4{
     color: #fff;
     margin: 1.5rem;
     font-size: 20px;
+}
+
+.footer-content ul{
+    list-style: none;
 }
 
 .footer-content li{
@@ -233,4 +351,30 @@ font-size:14px;
 .icons a:hover{
     color: #F4F4F4;
     transform: translateY(-5px);
+}
+
+/* for responsiveness */
+
+@media screen and(max-width : 1250px) {
+    html{
+        font-size: 75%;
+    }
+    .footer{
+        width:80%;
+        background: #393E46;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    
+        margin:  auto;
+    }
+    .footer-content li a{
+        display: block;
+        color: #F4F4F4;
+        font-size: 15px;
+        font-weight: 400;
+        transition: all 0.4s ease;
+        text-decoration: none;
+    }
 }
